@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrickObject : MonoBehaviour
+[CreateAssetMenu(fileName = "New Trick Object", menuName = "Card System/Cards/Trick")]
+public class TrickObject : CardObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public int id;
+    public void awake(){
+        type = CardType.Trick;
     }
 }

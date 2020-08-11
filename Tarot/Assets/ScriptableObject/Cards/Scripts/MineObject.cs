@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MineObject : MonoBehaviour
+[CreateAssetMenu(fileName = "New Mine Object", menuName = "Card System/Cards/Mine")]
+public class MineObject : CardObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public int id;
+    public void awake(){
+        type = CardType.Mine;
     }
 }

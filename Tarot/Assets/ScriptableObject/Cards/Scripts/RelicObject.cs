@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RelicObject : MonoBehaviour
+[CreateAssetMenu(fileName = "New Relic Object", menuName = "Card System/Cards/Relic")]
+public class RelicObject : CardObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public int id;
+    public void awake(){
+        type = CardType.Relic;
     }
 }
